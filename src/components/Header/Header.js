@@ -15,6 +15,7 @@ import {
   Div3,
   NavLink,
   SocialIcons,
+  Span,
 } from './HeaderStyles'
 
 const Header = () => (
@@ -26,10 +27,11 @@ const Header = () => (
             display: 'flex',
             alignItems: 'center',
             color: 'white',
+            marginBottom: '17px',
           }}
         >
           <DiCssdeck size="3rem" />
-          <span>{NEXT_APP_ELEMENT_STRINGS.PORTFOLIO_BRAND}</span>
+          <Span>{NEXT_APP_ELEMENT_STRINGS.PORTFOLIO_BRAND}</Span>
         </a>
       </Link>
     </Div1>
