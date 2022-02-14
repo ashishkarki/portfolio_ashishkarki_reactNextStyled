@@ -40,19 +40,19 @@ const Header = () => {
 
       <Div2>
         <li>
-          <Link href={NEXT_APP_ROUTE_NAMES.PROJECTS}>
+          <Link href={`#${NEXT_APP_ROUTE_NAMES.PROJECTS}`}>
             <NavLink>{NEXT_APP_ELEMENT_STRINGS.PROJECTS}</NavLink>
           </Link>
         </li>
 
         <li>
-          <Link href={NEXT_APP_ROUTE_NAMES.PROJECTS}>
+          <Link href={`#${NEXT_APP_ROUTE_NAMES.TECHNOLOGIES}`}>
             <NavLink>{NEXT_APP_ELEMENT_STRINGS.TECHNOLOGIES}</NavLink>
           </Link>
         </li>
 
         <li>
-          <Link href={NEXT_APP_ROUTE_NAMES.PROJECTS}>
+          <Link href={NEXT_APP_ROUTE_NAMES.ABOUT}>
             <NavLink>{NEXT_APP_ELEMENT_STRINGS.ABOUT}</NavLink>
           </Link>
         </li>

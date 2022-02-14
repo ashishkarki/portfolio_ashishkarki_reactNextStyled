@@ -19,12 +19,15 @@ import {
   SectionTitle,
 } from '../../styles/GlobalComponents'
 import { projects } from '../../constants/constants'
-import { NEXT_APP_ELEMENT_STRINGS } from '../../constants/myConstants'
+import {
+  NEXT_APP_ELEMENT_STRINGS,
+  NEXT_APP_ROUTE_NAMES,
+} from '../../constants/myConstants'
 import { windowOpener } from '../../constants/myUtils'
 
 const Projects = () => {
   return (
-    <Section nopadding id="projects">
+    <Section nopadding id={NEXT_APP_ROUTE_NAMES.PROJECTS}>
       <SectionDivider />
 
       <SectionTitle>{NEXT_APP_ELEMENT_STRINGS.PROJECTS}</SectionTitle>
