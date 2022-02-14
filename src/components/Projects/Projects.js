@@ -19,11 +19,15 @@ import {
   SectionTitle,
 } from '../../styles/GlobalComponents'
 import { projects } from '../../constants/constants'
-import { NEXT_APP_ELEMENT_STRINGS } from '../../constants/myConstants'
+import {
+  NEXT_APP_ELEMENT_STRINGS,
+  NEXT_APP_ROUTE_NAMES,
+} from '../../constants/myConstants'
+import { windowOpener } from '../../constants/myUtils'
 
 const Projects = () => {
   return (
-    <Section nopadding id="projects">
+    <Section nopadding id={NEXT_APP_ROUTE_NAMES.PROJECTS}>
       <SectionDivider />
 
       <SectionTitle>{NEXT_APP_ELEMENT_STRINGS.PROJECTS}</SectionTitle>
@@ -37,7 +41,29 @@ const Projects = () => {
               <Hr />
             </TitleContent>
 
-            <CardInfo>Description</CardInfo>
+            <CardInfo>{project.description}</CardInfo>
+
+            <div>
+              <TitleContent>Stack</TitleContent>
+              <TagList>
+                {project.tags.map((tag, idx) => (
+                  <Tag key={idx}>{tag}</Tag>
+                ))}
+              </TagList>
+            </div>
+
+            <UtilityList>
+              <ExternalLinks
+                onClick={(evt) => windowOpener(project.source, evt)}
+              >
+                Code
+              </ExternalLinks>
+              <ExternalLinks
+                onClick={(evt) => windowOpener(project.visit, evt)}
+              >
+                Demo
+              </ExternalLinks>
+            </UtilityList>
           </BlogCard>
         ))}
       </GridContainer>
