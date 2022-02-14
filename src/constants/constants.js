@@ -67,9 +67,17 @@ export const projects = [
 ]
 
 export const TimeLineData = [
-  { year: 2017, text: 'Started my journey' },
-  { year: 2018, text: 'Worked as a freelance developer' },
-  { year: 2019, text: 'Founded JavaScript Mastery' },
-  { year: 2020, text: 'Shared my projects with the world' },
-  { year: 2021, text: 'Started my own platform' },
+  { year: 2010, text: 'Finish B.E. in Comp. Engg.' },
+  { year: 2010, text: 'Started First Professional Job at Verisk IT, Nepal' },
+  { year: 2012, text: 'Started MSc. in Comp. Science at UNLV' },
+  {
+    year: 2015,
+    text: 'Done with Masters. Started work at Genscape in Boston area',
+  },
+  { year: 2018, text: 'Moved to Mimecast again in Boston area' },
+  {
+    year: 2019,
+    text:
+      'Facing family problems, yet have kept learning and am ready for my new opportunity',
+  },
 ]
