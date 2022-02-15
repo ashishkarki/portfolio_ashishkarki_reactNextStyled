@@ -3,6 +3,7 @@ export const NEXT_APP_ROUTE_NAMES = {
   PROJECTS: 'projects',
   TECHNOLOGIES: 'tech',
   ABOUT: 'about',
+  CONTACT: 'contact',
 }
 
 export const NEXT_APP_ELEMENT_STRINGS = {
@@ -10,6 +11,7 @@ export const NEXT_APP_ELEMENT_STRINGS = {
   PROJECTS: 'Projects',
   TECHNOLOGIES: 'Technologies',
   ABOUT: 'About',
+  CONTACT: 'Contact',
 
   HOME: 'Home',
 }

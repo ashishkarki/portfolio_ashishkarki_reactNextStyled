@@ -24,10 +24,19 @@ const Hero = (props) => {
           and building enterprise level software.
         </SectionText>
 
-        <Button
-          onClick={(evt) => windowOpener(NEXT_APP_LINK_URLS.ABOUT_ME, evt)}
-        >
-          Learn More
+        <Button>
+          <a
+            href="/files/Resume-AshishKarki-Updated.pdf"
+            download="AshishKarki-Resume.pdf"
+            alt="Ashish Karki Resume"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              color: 'white',
+            }}
+          >
+            Get Resume
+          </a>
         </Button>
       </LeftSection>
     </Section>
