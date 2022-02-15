@@ -6,7 +6,7 @@ export const NEXT_APP_ROUTE_NAMES = {
 }
 
 export const NEXT_APP_ELEMENT_STRINGS = {
-  PORTFOLIO_BRAND: 'Portfolio',
+  PORTFOLIO_BRAND: 'Ashish Karki',
   PROJECTS: 'Projects',
   TECHNOLOGIES: 'Technologies',
   ABOUT: 'About',

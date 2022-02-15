@@ -11,6 +11,7 @@ import { windowOpener } from '../../constants/myUtils'
 import SocialCollection from '../SocialCollection/SocialCollection'
 
 import {
+  Anchor,
   Container,
   Div1,
   Div2,
@@ -25,17 +26,10 @@ const Header = () => {
     <Container>
       <Div1>
         <Link href={NEXT_APP_ROUTE_NAMES.HOME}>
-          <a
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              color: 'white',
-              marginBottom: '17px',
-            }}
-          >
-            <DiCssdeck size="3rem" />
+          <Anchor href={`#${NEXT_APP_ROUTE_NAMES.HOME}`}>
+            {/* <DiCssdeck size="3rem" /> */}
             <Span>{NEXT_APP_ELEMENT_STRINGS.PORTFOLIO_BRAND}</Span>
-          </a>
+          </Anchor>
         </Link>
       </Div1>
 
