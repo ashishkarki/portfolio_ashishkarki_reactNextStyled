@@ -51,6 +51,12 @@ const Header = () => {
             <NavLink>{NEXT_APP_ELEMENT_STRINGS.ABOUT}</NavLink>
           </Link>
         </li>
+
+        <li>
+          <Link href={`#${NEXT_APP_ROUTE_NAMES.CONTACT}`}>
+            <NavLink>{NEXT_APP_ELEMENT_STRINGS.CONTACT}</NavLink>
+          </Link>
+        </li>
       </Div2>
 
       <Div3>

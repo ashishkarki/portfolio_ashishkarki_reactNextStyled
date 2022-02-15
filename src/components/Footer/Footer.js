@@ -5,7 +5,10 @@ import {
   AiFillLinkedin,
   AiFillProfile,
 } from 'react-icons/ai'
-import { NEXT_APP_LINK_URLS } from '../../constants/myConstants'
+import {
+  NEXT_APP_LINK_URLS,
+  NEXT_APP_ROUTE_NAMES,
+} from '../../constants/myConstants'
 import { windowOpener } from '../../constants/myUtils'
 
 import { SocialIcons } from '../Header/HeaderStyles'
@@ -24,7 +27,7 @@ import {
 
 const Footer = () => {
   return (
-    <FooterWrapper>
+    <FooterWrapper id={NEXT_APP_ROUTE_NAMES.CONTACT}>
       <LinkList>
         <LinkColumn>
           <LinkTitle>Call</LinkTitle>
