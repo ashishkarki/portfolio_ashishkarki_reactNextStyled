@@ -8,6 +8,7 @@ import {
   NEXT_APP_ROUTE_NAMES,
 } from '../../constants/myConstants'
 import { windowOpener } from '../../constants/myUtils'
+import SocialCollection from '../SocialCollection/SocialCollection'
 
 import {
   Container,
@@ -59,23 +60,7 @@ const Header = () => {
       </Div2>
 
       <Div3>
-        <SocialIcons
-          onClick={(evt) => windowOpener(NEXT_APP_LINK_URLS.GITHUB, evt)}
-        >
-          <AiFillGithub size="3rem" />
-        </SocialIcons>
-
-        <SocialIcons
-          onClick={(evt) => windowOpener(NEXT_APP_LINK_URLS.LINKEDIN, evt)}
-        >
-          <AiFillLinkedin size="3rem" />
-        </SocialIcons>
-
-        <SocialIcons
-          onClick={(evt) => windowOpener(NEXT_APP_LINK_URLS.ABOUT_ME, evt)}
-        >
-          <AiFillProfile size="3rem" />
-        </SocialIcons>
+        <SocialCollection />
       </Div3>
     </Container>
   )
