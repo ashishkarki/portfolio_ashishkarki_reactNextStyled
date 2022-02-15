@@ -9,6 +9,7 @@ import { NEXT_APP_LINK_URLS } from '../../constants/myConstants'
 import { windowOpener } from '../../constants/myUtils'
 
 import { SocialIcons } from '../Header/HeaderStyles'
+import SocialCollection from '../SocialCollection/SocialCollection'
 import {
   CompanyContainer,
   FooterWrapper,
@@ -47,23 +48,7 @@ const Footer = () => {
         </CompanyContainer>
 
         <SocialContainer>
-          <SocialIcons
-            onClick={(evt) => windowOpener(NEXT_APP_LINK_URLS.GITHUB, evt)}
-          >
-            <AiFillGithub size="3rem" />
-          </SocialIcons>
-
-          <SocialIcons
-            onClick={(evt) => windowOpener(NEXT_APP_LINK_URLS.LINKEDIN, evt)}
-          >
-            <AiFillLinkedin size="3rem" />
-          </SocialIcons>
-
-          <SocialIcons
-            onClick={(evt) => windowOpener(NEXT_APP_LINK_URLS.ABOUT_ME, evt)}
-          >
-            <AiFillProfile size="3rem" />
-          </SocialIcons>
+          <SocialCollection />
         </SocialContainer>
       </SocialIconsContainer>
     </FooterWrapper>

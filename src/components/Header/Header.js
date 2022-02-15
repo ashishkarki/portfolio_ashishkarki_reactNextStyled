@@ -52,7 +52,7 @@ const Header = () => {
         </li>
 
         <li>
-          <Link href={NEXT_APP_ROUTE_NAMES.ABOUT}>
+          <Link href={`#${NEXT_APP_ROUTE_NAMES.ABOUT}`}>
             <NavLink>{NEXT_APP_ELEMENT_STRINGS.ABOUT}</NavLink>
           </Link>
         </li>
