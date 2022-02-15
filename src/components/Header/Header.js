@@ -8,8 +8,10 @@ import {
   NEXT_APP_ROUTE_NAMES,
 } from '../../constants/myConstants'
 import { windowOpener } from '../../constants/myUtils'
+import SocialCollection from '../SocialCollection/SocialCollection'
 
 import {
+  Anchor,
   Container,
   Div1,
   Div2,
@@ -24,17 +26,10 @@ const Header = () => {
     <Container>
       <Div1>
         <Link href={NEXT_APP_ROUTE_NAMES.HOME}>
-          <a
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              color: 'white',
-              marginBottom: '17px',
-            }}
-          >
-            <DiCssdeck size="3rem" />
+          <Anchor href={`#${NEXT_APP_ROUTE_NAMES.HOME}`}>
+            {/* <DiCssdeck size="3rem" /> */}
             <Span>{NEXT_APP_ELEMENT_STRINGS.PORTFOLIO_BRAND}</Span>
-          </a>
+          </Anchor>
         </Link>
       </Div1>
 
@@ -52,30 +47,20 @@ const Header = () => {
         </li>
 
         <li>
-          <Link href={NEXT_APP_ROUTE_NAMES.ABOUT}>
+          <Link href={`#${NEXT_APP_ROUTE_NAMES.ABOUT}`}>
             <NavLink>{NEXT_APP_ELEMENT_STRINGS.ABOUT}</NavLink>
+          </Link>
+        </li>
+
+        <li>
+          <Link href={`#${NEXT_APP_ROUTE_NAMES.CONTACT}`}>
+            <NavLink>{NEXT_APP_ELEMENT_STRINGS.CONTACT}</NavLink>
           </Link>
         </li>
       </Div2>
 
       <Div3>
-        <SocialIcons
-          onClick={(evt) => windowOpener(NEXT_APP_LINK_URLS.GITHUB, evt)}
-        >
-          <AiFillGithub size="3rem" />
-        </SocialIcons>
-
-        <SocialIcons
-          onClick={(evt) => windowOpener(NEXT_APP_LINK_URLS.LINKEDIN, evt)}
-        >
-          <AiFillLinkedin size="3rem" />
-        </SocialIcons>
-
-        <SocialIcons
-          onClick={(evt) => windowOpener(NEXT_APP_LINK_URLS.ABOUT_ME, evt)}
-        >
-          <AiFillProfile size="3rem" />
-        </SocialIcons>
+        <SocialCollection />
       </Div3>
     </Container>
   )

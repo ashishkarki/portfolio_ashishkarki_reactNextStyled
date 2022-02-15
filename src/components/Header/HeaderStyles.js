@@ -45,6 +45,17 @@ export const Div3 = styled.div`
   }
 `
 
+export const Anchor = styled.a`
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media ${(props) => props.theme.breakpoints.xl} {
+    margin-bottom: 3rem;
+  }
+`
+
 export const Span = styled.span`
   font-size: 2rem;
 `
