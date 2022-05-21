@@ -4,6 +4,10 @@
 
 <hr>
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/82899e7e-3fbe-4ecf-b867-4ff6446a5d27/deploy-status)](https://app.netlify.com/sites/portfolio-ashishkarki/deploys)
+
+<hr>
+
 ### This project and its starter template is based off the youtube video by
 
 "JavaScript Mastery" channel. Links to:
