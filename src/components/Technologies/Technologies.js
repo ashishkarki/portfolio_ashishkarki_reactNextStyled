@@ -32,35 +32,35 @@ const Technologies = () => (
 
     <List>
       <ListItem>
-        <DiReact size="3rem" />
+        <DiReact size='3rem' />
         <ListContainer>
           <ListTitle>Front-end</ListTitle>
           <ListParagraph>
             Experience with <br />
-            React.js, Angular, JavaScript, TypeScript and CSS/Sass
+            React, Angular, JavaScript, TypeScript and Css/Sass/Tailwind
           </ListParagraph>
         </ListContainer>
       </ListItem>
 
       <ListItem>
-        <DiFirebase size="3rem" />
+        <DiFirebase size='3rem' />
         <ListContainer>
           <ListTitle>Back-end</ListTitle>
           <ListParagraph>
             Experience with <br />
-            Node.js, Express, Nest.js, Java, Rest Api and Databases.
+            Node, Express, Nest.js, Java, Rest & GraphQL APIs and Databases.
           </ListParagraph>
         </ListContainer>
       </ListItem>
 
       <ListItem>
-        <DiJenkins size="3rem" />
+        <DiJenkins size='3rem' />
         <ListContainer>
-          <ListTitle>Tools/Platforms</ListTitle>
+          <ListTitle>Tools/Concepts</ListTitle>
           <ListParagraph>
             Experience with <br />
-            MS Azure, AWS, Docker, Jenkins, Git, GitHub, Jira, Testing and
-            Agile.
+            MS Azure, AWS, Docker, Jenkins, Git/GitHub, Jira, Testing, Agile,
+            Project planning and Team work.
           </ListParagraph>
         </ListContainer>
       </ListItem>

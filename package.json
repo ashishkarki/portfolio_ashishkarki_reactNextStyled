@@ -4,8 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
-    "start": "next start"
+    "export": "rm -rf ./out && next build && next export",
+    "start": "next start",
+    "build": "rm -rf ./next && next build"
   },
   "dependencies": {
     "next": "10.2.3",
